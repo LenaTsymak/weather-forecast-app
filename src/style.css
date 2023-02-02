@@ -1,0 +1,230 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  background-image: url("../image/leaves_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+}
+
+.container {
+  margin: 24px auto;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 800px;
+}
+
+.attic {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  float: left;
+  width: 100%;
+}
+
+#change-to-celsius,
+#change-to-fahrenheit {
+  color: #ececec;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #385170;
+  border-radius: 50% 50% 5% 5%;
+  background-color: #385170;
+  padding: 8px;
+  line-height: 2;
+  margin: 0 4px;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+#change-to-celsius.active,
+#change-to-fahrenheit.active {
+  background-color: #71ac98;
+  border-color: #71ac98;
+  color: #ececec;
+  text-decoration: none;
+}
+#current-location {
+  width: 40px;
+  margin-left: 36px;
+}
+.search_form {
+  margin: 4px auto;
+  width: 400px;
+  padding: 0;
+}
+.search_button {
+  padding: 2px 12px;
+  border-radius: 4px;
+  border: 2px solid #71ac98;
+  transition: all 200ms ease-in-out;
+  color: #385170;
+  box-shadow: 2px 2px 9px 3px rgba(56, 81, 112, 0.1);
+}
+.search_button:hover {
+  border: 2px solid #385170;
+  background-color: #385170;
+  color: #ececec;
+}
+
+.change_days {
+  margin: 24px auto;
+}
+
+.today-forecast {
+  width: 600px;
+  margin: 0 auto;
+}
+.card-deck {
+  margin: 0 auto;
+}
+.btn-outline-primary {
+  border-color: #71ac98;
+  color: #71ac98;
+  right: 50px;
+  transition: all 200ms ease-in-out;
+  box-shadow: 2px 2px 9px 3px rgba(56, 81, 112, 0.1);
+}
+.btn.btn-outline-primary.active {
+  background-color: #71ac98 !important;
+  color: #ececec;
+  border-color: #71ac98 !important;
+}
+.btn-outline-primary:hover {
+  background-color: #71ac98;
+  color: #ececec;
+  border-color: #71ac98;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.degreesIcon {
+  font-weight: 800;
+  color: #385170;
+  text-shadow: 3px 7px 10px rgba(56, 81, 112, 0.1);
+}
+
+.city,
+.country {
+  text-transform: capitalize;
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.border-secondary {
+  border-radius: 12px;
+  border-color: #71ac98 !important;
+  box-shadow: 2px 9px 11px 3px rgba(56, 81, 112, 0.1);
+  margin-top: 12px;
+}
+
+.card-title,
+.card-header {
+  color: #385170 !important;
+  font-weight: 800;
+  text-align: center;
+}
+.currentTemp {
+  font-size: 24px;
+  margin-top: 16px;
+}
+.card-header {
+  background-color: rgb(113, 172, 152, 0.1);
+  border-bottom: 1px solid #71ac98;
+  box-shadow: 2px 9px 11px 3px rgba(56, 81, 112, 0.05);
+}
+.todayTable {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #71ac98;
+}
+.card-text {
+  text-align: left;
+  margin: 32px 0;
+  float: left;
+  font-size: 14px;
+  color: #71ac98;
+}
+#wind-speed,
+#humidity,
+#max-temp,
+#min-temp {
+  font-weight: 700;
+  color: #385170;
+  opacity: 0.8;
+}
+
+.hourlyForecastTable,
+li {
+  list-style-type: none;
+  margin: 0;
+  line-height: 2rem;
+  padding: 0;
+}
+
+.time {
+  color: #71ac98;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.temperature {
+  font-weight: 700;
+  color: #385170;
+  opacity: 0.8;
+}
+
+.footer-text {
+  color: #71ac98;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 36px;
+  padding: 0 4px;
+}
+.seven_table {
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 16px;
+}
+.seven_table card-md-3 {
+  background-color: white;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  body,
+  html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    margin: 16px 0;
+    padding: 0;
+  }
+  .today-forecast {
+    margin: 0 8px;
+    width: 100%;
+  }
+  .card-text {
+    text-align: center;
+    margin: 12px auto;
+  }
+  .hourlyForecastTable {
+    margin-top: 12px;
+  }
+  .main_table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
